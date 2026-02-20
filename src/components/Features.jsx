@@ -100,6 +100,21 @@ const Features = () => {
                                     </svg>
                                 </button>
                             </div>
+                            {/* Glowing Bottom Border */}
+                            <div
+                                className="absolute bottom-0 left-0 right-0 h-[3px] z-20"
+                                style={{
+                                    background: 'linear-gradient(to right, #6366f1, #a855f7, #ec4899)',
+                                    boxShadow: '0 0 8px 1px rgba(168, 85, 247, 0.8), 0 0 20px 2px rgba(168, 85, 247, 0.4)',
+                                }}
+                            />
+                            <div
+                                className="absolute bottom-0 left-0 right-0 h-[12px] z-10 blur-md group-hover:h-[18px] transition-all duration-500"
+                                style={{
+                                    background: 'linear-gradient(to right, #6366f1, #a855f7, #ec4899)',
+                                    opacity: 1,
+                                }}
+                            />
                         </motion.div>
                     ))}
                 </motion.div>
