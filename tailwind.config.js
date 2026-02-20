@@ -32,8 +32,8 @@ export default {
                     '50%': { transform: 'translateY(-20px)' },
                 },
                 glow: {
-                    '0%': { boxShadow: '0 0 20px rgba(168, 85, 247, 0.3)' },
-                    '100%': { boxShadow: '0 0 40px rgba(168, 85, 247, 0.6), 0 0 80px rgba(236, 72, 153, 0.3)' },
+                    '0%': { boxShadow: '0 0 20px rgba(99, 102, 241, 0.3)' },
+                    '100%': { boxShadow: '0 0 40px rgba(99, 102, 241, 0.6), 0 0 80px rgba(236, 72, 153, 0.3)' },
                 },
                 shimmer: {
                     '0%': { backgroundPosition: '-200% 0' },

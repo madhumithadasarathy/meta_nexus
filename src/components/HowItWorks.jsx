@@ -70,7 +70,7 @@ const HowItWorks = () => {
                             whileTap={{ scale: 0.95 }}
                         >
                             {activeTab === tab.id && (
-                                <motion.span layoutId="activeTab" className="absolute inset-0 rounded-xl" style={{ background: 'linear-gradient(135deg, #a855f7, #ec4899)' }} transition={{ type: 'spring', bounce: 0.2, duration: 0.6 }} />
+                                <motion.span layoutId="activeTab" className="absolute inset-0 rounded-xl" style={{ background: 'linear-gradient(135deg, #6366f1, #a855f7, #ec4899)' }} transition={{ type: 'spring', bounce: 0.2, duration: 0.6 }} />
                             )}
                             <span className="relative z-10">{tab.label}</span>
                         </motion.button>
@@ -109,7 +109,7 @@ const HowItWorks = () => {
                                         animate={{ opacity: 1, x: 0 }}
                                         transition={{ delay: idx * 0.15 }}
                                     >
-                                        <div className="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0" style={{ background: 'linear-gradient(135deg, #a855f7, #ec4899)' }}>
+                                        <div className="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0" style={{ background: 'linear-gradient(135deg, #6366f1, #a855f7, #ec4899)' }}>
                                             <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" /></svg>
                                         </div>
                                         <span className="text-gray-300 text-sm sm:text-base font-medium group-hover:text-white transition-colors">{point}</span>

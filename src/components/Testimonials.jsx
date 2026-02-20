@@ -70,7 +70,7 @@ const Testimonials = () => {
 
                 <div className="flex justify-center gap-2 mt-8">
                     {testimonials.map((_, i) => (
-                        <button key={i} onClick={() => setActive(i)} className={`h-2.5 rounded-full transition-all duration-300 ${active === i ? 'w-8' : 'w-2.5 bg-white/20 hover:bg-white/40'}`} style={active === i ? { background: 'linear-gradient(135deg, #a855f7, #ec4899)' } : {}} />
+                        <button key={i} onClick={() => setActive(i)} className={`h-2.5 rounded-full transition-all duration-300 ${active === i ? 'w-8' : 'w-2.5 bg-white/20 hover:bg-white/40'}`} style={active === i ? { background: 'linear-gradient(135deg, #6366f1, #a855f7, #ec4899)' } : {}} />
                     ))}
                 </div>
             </div>

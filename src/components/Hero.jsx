@@ -5,7 +5,7 @@ const Hero = () => {
         <section id="hero" className="relative min-h-screen flex items-center overflow-hidden bg-black">
             {/* BG effects */}
             <div className="absolute inset-0">
-                <div className="absolute top-1/4 left-1/6 w-[500px] h-[500px] rounded-full blur-[150px] morph-bg" style={{ background: 'rgba(168, 85, 247, 0.15)' }} />
+                <div className="absolute top-1/4 left-1/6 w-[500px] h-[500px] rounded-full blur-[150px] morph-bg" style={{ background: 'rgba(99, 102, 241, 0.15)' }} />
                 <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] rounded-full blur-[120px] morph-bg" style={{ background: 'rgba(236, 72, 153, 0.1)', animationDelay: '4s' }} />
                 <div className="absolute inset-0 opacity-[0.03]" style={{
                     backgroundImage: 'linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)',
@@ -155,7 +155,7 @@ const Hero = () => {
                             animate={{ y: [0, -8, 0] }}
                             transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut', delay: 2 }}
                         >
-                            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #a855f7, #ec4899)' }}>
+                            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #6366f1, #a855f7, #ec4899)' }}>
                                 <svg className="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
                             </div>
                             <div>

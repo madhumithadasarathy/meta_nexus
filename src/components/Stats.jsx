@@ -30,7 +30,7 @@ const Stats = () => {
 
     return (
         <section className="relative py-20 bg-black">
-            <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, rgba(168, 85, 247, 0.05), transparent, rgba(236, 72, 153, 0.05))' }} />
+            <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, rgba(99, 102, 241, 0.05), transparent, rgba(236, 72, 153, 0.05))' }} />
             <motion.div
                 className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
                 onViewportEnter={() => setInView(true)}

@@ -3,14 +3,15 @@
 @tailwind utilities;
 
 :root {
-  --accent-from: #a855f7;
+  --accent-from: #6366f1;
+  --accent-via: #a855f7;
   --accent-to: #ec4899;
   --accent-mid: #c084fc;
   --accent-light: #d8b4fe;
   --accent-lighter: #f0abfc;
-  --accent-dark: #7c3aed;
+  --accent-dark: #4f46e5;
   --accent-glow: #a855f7;
-  --accent-muted: #6b21a8;
+  --accent-muted: #4338ca;
 }
 
 @layer base {
@@ -36,26 +37,26 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, var(--accent-from), var(--accent-to));
+    background: linear-gradient(180deg, var(--accent-from), var(--accent-via), var(--accent-to));
     border-radius: 3px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(180deg, var(--accent-mid), var(--accent-to));
+    background: linear-gradient(180deg, var(--accent-via), var(--accent-mid), var(--accent-to));
   }
 }
 
 @layer components {
   .btn-primary {
     @apply px-5 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-3.5 rounded-lg font-semibold text-white text-xs sm:text-sm md:text-base transition-all duration-300 ease-out cursor-pointer;
-    background: linear-gradient(135deg, var(--accent-from), var(--accent-to));
-    box-shadow: 0 4px 20px rgba(168, 85, 247, 0.3), 0 0 10px rgba(236, 72, 153, 0.15);
+    background: linear-gradient(135deg, var(--accent-from), var(--accent-via), var(--accent-to));
+    box-shadow: 0 4px 20px rgba(99, 102, 241, 0.3), 0 0 10px rgba(236, 72, 153, 0.15);
   }
 
   .btn-primary:hover {
     transform: translateY(-2px);
-    background: linear-gradient(135deg, var(--accent-mid), var(--accent-to));
-    box-shadow: 0 8px 30px rgba(168, 85, 247, 0.5), 0 0 20px rgba(236, 72, 153, 0.25);
+    background: linear-gradient(135deg, var(--accent-from), var(--accent-mid), var(--accent-to));
+    box-shadow: 0 8px 30px rgba(99, 102, 241, 0.5), 0 0 20px rgba(236, 72, 153, 0.25);
   }
 
   .btn-primary:active {
@@ -65,14 +66,14 @@
   .btn-secondary {
     @apply px-5 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-3.5 rounded-lg font-semibold text-white text-xs sm:text-sm md:text-base transition-all duration-300 ease-out cursor-pointer;
     background: transparent;
-    border: 1px solid rgba(168, 85, 247, 0.5);
+    border: 1px solid rgba(99, 102, 241, 0.5);
   }
 
   .btn-secondary:hover {
-    background: rgba(168, 85, 247, 0.1);
-    border-color: rgba(168, 85, 247, 0.8);
+    background: rgba(99, 102, 241, 0.1);
+    border-color: rgba(99, 102, 241, 0.8);
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(168, 85, 247, 0.2), 0 0 15px rgba(236, 72, 153, 0.15);
+    box-shadow: 0 8px 25px rgba(99, 102, 241, 0.2), 0 0 15px rgba(236, 72, 153, 0.15);
   }
 
   .btn-secondary:active {
@@ -82,19 +83,19 @@
   .glass-card {
     background: rgba(10, 10, 10, 0.7);
     backdrop-filter: blur(16px);
-    border: 1px solid rgba(168, 85, 247, 0.12);
+    border: 1px solid rgba(99, 102, 241, 0.12);
     border-radius: 16px;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .glass-card:hover {
-    border-color: rgba(236, 72, 153, 0.4);
-    box-shadow: 0 8px 40px rgba(168, 85, 247, 0.12), 0 0 20px rgba(236, 72, 153, 0.1);
+    border-color: rgba(168, 85, 247, 0.4);
+    box-shadow: 0 8px 40px rgba(99, 102, 241, 0.12), 0 0 20px rgba(236, 72, 153, 0.1);
     transform: translateY(-4px);
   }
 
   .accent-text {
-    background: linear-gradient(135deg, var(--accent-from), var(--accent-to));
+    background: linear-gradient(135deg, var(--accent-from), var(--accent-via), var(--accent-to));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -113,7 +114,7 @@
 @layer utilities {
   .bg-mesh {
     background-image:
-      radial-gradient(at 20% 20%, rgba(168, 85, 247, 0.08) 0px, transparent 50%),
+      radial-gradient(at 20% 20%, rgba(99, 102, 241, 0.08) 0px, transparent 50%),
       radial-gradient(at 80% 30%, rgba(236, 72, 153, 0.06) 0px, transparent 50%),
       radial-gradient(at 50% 80%, rgba(168, 85, 247, 0.05) 0px, transparent 50%);
   }
@@ -130,13 +131,13 @@
   inset: -2px;
   border-radius: inherit;
   background: conic-gradient(from var(--shine-angle, 0deg),
-      rgba(168, 85, 247, 0.05) 0deg,
-      rgba(192, 132, 252, 0.4) 60deg,
-      rgba(236, 72, 153, 0.6) 120deg,
-      rgba(192, 132, 252, 0.4) 180deg,
-      rgba(168, 85, 247, 0.05) 240deg,
-      rgba(236, 72, 153, 0.4) 300deg,
-      rgba(168, 85, 247, 0.05) 360deg);
+      rgba(99, 102, 241, 0.05) 0deg,
+      rgba(99, 102, 241, 0.4) 60deg,
+      rgba(168, 85, 247, 0.6) 120deg,
+      rgba(236, 72, 153, 0.6) 180deg,
+      rgba(168, 85, 247, 0.4) 240deg,
+      rgba(99, 102, 241, 0.4) 300deg,
+      rgba(99, 102, 241, 0.05) 360deg);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
@@ -160,11 +161,11 @@
 /* Shining gradient background */
 .shine-bg {
   background: linear-gradient(135deg,
-      rgba(168, 85, 247, 0.05) 0%,
-      rgba(192, 132, 252, 0.25) 25%,
+      rgba(99, 102, 241, 0.05) 0%,
+      rgba(168, 85, 247, 0.25) 25%,
       rgba(236, 72, 153, 0.35) 50%,
-      rgba(192, 132, 252, 0.25) 75%,
-      rgba(168, 85, 247, 0.05) 100%);
+      rgba(168, 85, 247, 0.25) 75%,
+      rgba(99, 102, 241, 0.05) 100%);
   background-size: 200% 200%;
   animation: shineMove 3s ease-in-out infinite;
 }

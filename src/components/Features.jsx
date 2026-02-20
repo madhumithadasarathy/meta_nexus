@@ -79,7 +79,7 @@ const Features = () => {
                         >
                             <div
                                 className="w-14 h-14 rounded-xl flex items-center justify-center mb-5 text-white transition-transform duration-300 group-hover:scale-110 shadow-lg"
-                                style={{ background: 'linear-gradient(135deg, #a855f7, #ec4899)' }}
+                                style={{ background: 'linear-gradient(135deg, #6366f1, #a855f7, #ec4899)' }}
                             >
                                 <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">{f.icon}</svg>
                             </div>
