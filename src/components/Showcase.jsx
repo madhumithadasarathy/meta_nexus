@@ -1,14 +1,14 @@
 import { motion } from 'framer-motion'
 
 const gallery = [
-    { src: 'https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=400&h=400&fit=crop', label: 'Virtual Reality' },
-    { src: 'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=400&h=400&fit=crop', label: 'Digital Art' },
-    { src: 'https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?w=400&h=400&fit=crop', label: 'NFT Collection' },
-    { src: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=400&h=400&fit=crop', label: 'AI Integration' },
-    { src: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&h=400&fit=crop', label: 'Abstract Worlds' },
-    { src: 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=400&h=400&fit=crop', label: 'Crypto Gaming' },
-    { src: 'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=400&h=400&fit=crop', label: 'Blockchain Assets' },
-    { src: 'https://images.unsplash.com/photo-1617802690992-15d93263d3a9?w=400&h=400&fit=crop', label: 'Digital Fashion' },
+    { src: '/images/showcase1.jpg', label: 'Virtual Reality' },
+    { src: '/images/showcase2.jpg', label: 'Digital Art' },
+    { src: '/images/showcase3.jpg', label: 'NFT Collection' },
+    { src: '/images/showcase4.jpg', label: 'AI Integration' },
+    { src: '/images/showcase5.jpg', label: 'Abstract Worlds' },
+    { src: '/images/showcase6.jpg', label: 'Crypto Gaming' },
+    { src: '/images/showcase8.jpg', label: 'Blockchain Assets' },
+    { src: '/images/showcase8.jpg', label: 'Digital Fashion' },
 ]
 
 const Showcase = () => (
