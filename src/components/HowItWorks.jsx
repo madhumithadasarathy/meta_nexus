@@ -12,19 +12,19 @@ const tabContent = {
         title: 'Made A New App Where You Will Get Part Taste Of Metaverse World Like',
         description: "Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever since the when on the four of unknown printer took a galley of type it make book.",
         points: ['Individuals Can Meet Friends', 'Virtual Economy Is Emerging', 'Breaking Geographical Barriers'],
-        image: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=500&h=600&fit=crop',
+        image: '/images/app.jpg',
     },
     marketplace: {
         title: 'Explore The Digital Marketplace For Exclusive NFTs And Virtual Assets',
         description: 'Discover a vast collection of digital assets, virtual properties, and unique NFTs. Trade, collect, and invest in the future of digital ownership.',
         points: ['Secure Blockchain Transactions', 'Rare Digital Collectibles', 'Instant Asset Transfers'],
-        image: 'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=500&h=600&fit=crop',
+        image: '/images/market.jpg',
     },
     innovative: {
         title: 'Revolutionary Technology That Bridges Reality And Virtual Worlds',
         description: 'Our cutting-edge approach combines AI, blockchain, and immersive 3D experiences to create a seamless bridge between the physical and virtual worlds.',
         points: ['AI-Powered Interactions', 'Cross-Platform Integration', 'Real-Time Synchronization'],
-        image: 'https://images.unsplash.com/photo-1617802690992-15d93263d3a9?w=500&h=600&fit=crop',
+        image: '/images/technology.jpg',
     },
 }
 
