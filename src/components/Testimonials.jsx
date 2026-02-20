@@ -41,7 +41,7 @@ const Testimonials = () => {
                         <motion.div
                             key={i}
                             className={`glass-card p-6 cursor-pointer transition-all duration-500 ${active === i ? 'scale-[1.02]' : ''}`}
-                            style={active === i ? { borderColor: 'oklch(40.8% 0.153 2.432 / 0.4)', boxShadow: '0 8px 30px oklch(40.8% 0.153 2.432 / 0.1)' } : {}}
+                            style={active === i ? { borderColor: 'rgba(168, 85, 247, 0.4)', boxShadow: '0 8px 30px rgba(168, 85, 247, 0.1)' } : {}}
                             onClick={() => setActive(i)}
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
@@ -58,7 +58,7 @@ const Testimonials = () => {
                             </div>
                             <p className="text-gray-300 text-sm leading-relaxed mb-6 italic">"{t.quote}"</p>
                             <div className="flex items-center gap-3">
-                                <img src={t.avatar} alt={t.name} className="w-12 h-12 rounded-full object-cover" style={{ borderColor: 'oklch(40.8% 0.153 2.432 / 0.3)', borderWidth: '2px' }} />
+                                <img src={t.avatar} alt={t.name} className="w-12 h-12 rounded-full object-cover" style={{ borderColor: 'rgba(168, 85, 247, 0.3)', borderWidth: '2px' }} />
                                 <div>
                                     <p className="text-white font-semibold text-sm">{t.name}</p>
                                     <p className="text-gray-500 text-xs">{t.role}</p>
@@ -70,7 +70,7 @@ const Testimonials = () => {
 
                 <div className="flex justify-center gap-2 mt-8">
                     {testimonials.map((_, i) => (
-                        <button key={i} onClick={() => setActive(i)} className={`h-2.5 rounded-full transition-all duration-300 ${active === i ? 'w-8' : 'w-2.5 bg-white/20 hover:bg-white/40'}`} style={active === i ? { background: 'var(--accent)' } : {}} />
+                        <button key={i} onClick={() => setActive(i)} className={`h-2.5 rounded-full transition-all duration-300 ${active === i ? 'w-8' : 'w-2.5 bg-white/20 hover:bg-white/40'}`} style={active === i ? { background: 'linear-gradient(135deg, #a855f7, #ec4899)' } : {}} />
                     ))}
                 </div>
             </div>

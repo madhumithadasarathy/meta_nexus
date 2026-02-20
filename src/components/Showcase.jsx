@@ -50,7 +50,7 @@ const Showcase = () => (
                         <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-500">
                             <p className="text-white font-semibold text-sm">{item.label}</p>
                         </div>
-                        <div className="absolute inset-0 border border-transparent group-hover:border-accent/40 rounded-2xl transition-all duration-500" />
+                        <div className="absolute inset-0 border border-transparent group-hover:border-purple-500/40 rounded-2xl transition-all duration-500" />
                     </motion.div>
                 ))}
             </div>

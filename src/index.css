@@ -3,12 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --accent: oklch(40.8% 0.153 2.432);
-  --accent-light: oklch(55% 0.153 2.432);
-  --accent-lighter: oklch(65% 0.12 2.432);
-  --accent-dark: oklch(30% 0.153 2.432);
-  --accent-glow: oklch(50% 0.2 2.432);
-  --accent-muted: oklch(40.8% 0.08 2.432);
+  --accent-from: #a855f7;
+  --accent-to: #ec4899;
+  --accent-mid: #c084fc;
+  --accent-light: #d8b4fe;
+  --accent-lighter: #f0abfc;
+  --accent-dark: #7c3aed;
+  --accent-glow: #a855f7;
+  --accent-muted: #6b21a8;
 }
 
 @layer base {
@@ -34,26 +36,26 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    background: var(--accent);
+    background: linear-gradient(180deg, var(--accent-from), var(--accent-to));
     border-radius: 3px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: var(--accent-light);
+    background: linear-gradient(180deg, var(--accent-mid), var(--accent-to));
   }
 }
 
 @layer components {
   .btn-primary {
     @apply px-5 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-3.5 rounded-lg font-semibold text-white text-xs sm:text-sm md:text-base transition-all duration-300 ease-out cursor-pointer;
-    background: var(--accent);
-    box-shadow: 0 4px 20px oklch(40.8% 0.153 2.432 / 0.3), 0 0 10px oklch(55% 0.153 2.432 / 0.15);
+    background: linear-gradient(135deg, var(--accent-from), var(--accent-to));
+    box-shadow: 0 4px 20px rgba(168, 85, 247, 0.3), 0 0 10px rgba(236, 72, 153, 0.15);
   }
 
   .btn-primary:hover {
     transform: translateY(-2px);
-    background: var(--accent-light);
-    box-shadow: 0 8px 30px oklch(40.8% 0.153 2.432 / 0.5), 0 0 20px oklch(55% 0.2 2.432 / 0.25);
+    background: linear-gradient(135deg, var(--accent-mid), var(--accent-to));
+    box-shadow: 0 8px 30px rgba(168, 85, 247, 0.5), 0 0 20px rgba(236, 72, 153, 0.25);
   }
 
   .btn-primary:active {
@@ -63,14 +65,14 @@
   .btn-secondary {
     @apply px-5 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-3.5 rounded-lg font-semibold text-white text-xs sm:text-sm md:text-base transition-all duration-300 ease-out cursor-pointer;
     background: transparent;
-    border: 1px solid oklch(40.8% 0.153 2.432 / 0.5);
+    border: 1px solid rgba(168, 85, 247, 0.5);
   }
 
   .btn-secondary:hover {
-    background: oklch(40.8% 0.153 2.432 / 0.1);
-    border-color: oklch(40.8% 0.153 2.432 / 0.8);
+    background: rgba(168, 85, 247, 0.1);
+    border-color: rgba(168, 85, 247, 0.8);
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px oklch(40.8% 0.153 2.432 / 0.2), 0 0 15px oklch(55% 0.153 2.432 / 0.15);
+    box-shadow: 0 8px 25px rgba(168, 85, 247, 0.2), 0 0 15px rgba(236, 72, 153, 0.15);
   }
 
   .btn-secondary:active {
@@ -80,19 +82,19 @@
   .glass-card {
     background: rgba(10, 10, 10, 0.7);
     backdrop-filter: blur(16px);
-    border: 1px solid oklch(40.8% 0.153 2.432 / 0.12);
+    border: 1px solid rgba(168, 85, 247, 0.12);
     border-radius: 16px;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .glass-card:hover {
-    border-color: oklch(55% 0.153 2.432 / 0.4);
-    box-shadow: 0 8px 40px oklch(40.8% 0.153 2.432 / 0.12), 0 0 20px oklch(55% 0.2 2.432 / 0.1);
+    border-color: rgba(236, 72, 153, 0.4);
+    box-shadow: 0 8px 40px rgba(168, 85, 247, 0.12), 0 0 20px rgba(236, 72, 153, 0.1);
     transform: translateY(-4px);
   }
 
   .accent-text {
-    background: linear-gradient(135deg, var(--accent-light), var(--accent-lighter));
+    background: linear-gradient(135deg, var(--accent-from), var(--accent-to));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -100,7 +102,7 @@
 
   .section-subtitle {
     @apply text-sm tracking-[0.2em] uppercase text-center mb-4;
-    color: var(--accent-light);
+    color: var(--accent-mid);
   }
 
   .section-title {
@@ -111,9 +113,9 @@
 @layer utilities {
   .bg-mesh {
     background-image:
-      radial-gradient(at 20% 20%, oklch(40.8% 0.153 2.432 / 0.08) 0px, transparent 50%),
-      radial-gradient(at 80% 30%, oklch(40.8% 0.1 2.432 / 0.06) 0px, transparent 50%),
-      radial-gradient(at 50% 80%, oklch(40.8% 0.153 2.432 / 0.05) 0px, transparent 50%);
+      radial-gradient(at 20% 20%, rgba(168, 85, 247, 0.08) 0px, transparent 50%),
+      radial-gradient(at 80% 30%, rgba(236, 72, 153, 0.06) 0px, transparent 50%),
+      radial-gradient(at 50% 80%, rgba(168, 85, 247, 0.05) 0px, transparent 50%);
   }
 }
 
@@ -128,13 +130,13 @@
   inset: -2px;
   border-radius: inherit;
   background: conic-gradient(from var(--shine-angle, 0deg),
-      oklch(40.8% 0.153 2.432 / 0.05) 0deg,
-      oklch(55% 0.2 2.432 / 0.4) 60deg,
-      oklch(65% 0.15 2.432 / 0.6) 120deg,
-      oklch(55% 0.2 2.432 / 0.4) 180deg,
-      oklch(40.8% 0.153 2.432 / 0.05) 240deg,
-      oklch(55% 0.2 2.432 / 0.4) 300deg,
-      oklch(40.8% 0.153 2.432 / 0.05) 360deg);
+      rgba(168, 85, 247, 0.05) 0deg,
+      rgba(192, 132, 252, 0.4) 60deg,
+      rgba(236, 72, 153, 0.6) 120deg,
+      rgba(192, 132, 252, 0.4) 180deg,
+      rgba(168, 85, 247, 0.05) 240deg,
+      rgba(236, 72, 153, 0.4) 300deg,
+      rgba(168, 85, 247, 0.05) 360deg);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
@@ -158,11 +160,11 @@
 /* Shining gradient background */
 .shine-bg {
   background: linear-gradient(135deg,
-      oklch(40.8% 0.153 2.432 / 0.05) 0%,
-      oklch(55% 0.2 2.432 / 0.25) 25%,
-      oklch(65% 0.15 2.432 / 0.35) 50%,
-      oklch(55% 0.2 2.432 / 0.25) 75%,
-      oklch(40.8% 0.153 2.432 / 0.05) 100%);
+      rgba(168, 85, 247, 0.05) 0%,
+      rgba(192, 132, 252, 0.25) 25%,
+      rgba(236, 72, 153, 0.35) 50%,
+      rgba(192, 132, 252, 0.25) 75%,
+      rgba(168, 85, 247, 0.05) 100%);
   background-size: 200% 200%;
   animation: shineMove 3s ease-in-out infinite;
 }

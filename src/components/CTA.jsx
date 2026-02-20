@@ -5,7 +5,7 @@ const CTA = () => (
         <div className="absolute inset-0">
             <img src="https://images.unsplash.com/photo-1492684223f-36515f164f73?w=1920&h=600&fit=crop" alt="Stage" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-black/85" />
-            <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, oklch(40.8% 0.153 2.432 / 0.15), oklch(40.8% 0.153 2.432 / 0.15))' }} />
+            <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, rgba(168, 85, 247, 0.15), rgba(236, 72, 153, 0.15))' }} />
         </div>
         <motion.div
             className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
@@ -14,9 +14,9 @@ const CTA = () => (
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.8 }}
         >
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6" style={{ background: 'oklch(40.8% 0.153 2.432 / 0.1)', border: '1px solid oklch(40.8% 0.153 2.432 / 0.3)' }}>
-                <span className="w-2 h-2 rounded-full animate-pulse" style={{ background: 'var(--accent-light)' }} />
-                <span className="text-sm" style={{ color: 'var(--accent-lighter)' }}>Join The Revolution</span>
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6" style={{ background: 'rgba(168, 85, 247, 0.1)', border: '1px solid rgba(168, 85, 247, 0.3)' }}>
+                <span className="w-2 h-2 rounded-full animate-pulse bg-purple-400" />
+                <span className="text-sm text-purple-300">Join The Revolution</span>
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold mb-6 leading-tight">
                 Ready To Enter The<br /><span className="accent-text">Metaverse?</span>

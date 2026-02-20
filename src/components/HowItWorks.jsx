@@ -34,8 +34,8 @@ const HowItWorks = () => {
 
     return (
         <section id="how-it-works" className="relative py-24 lg:py-32 overflow-hidden bg-black">
-            <div className="absolute top-0 left-0 right-0 h-px" style={{ background: 'linear-gradient(to right, transparent, var(--accent-muted), transparent)' }} />
-            <div className="absolute bottom-0 left-0 right-0 h-px" style={{ background: 'linear-gradient(to right, transparent, var(--accent-muted), transparent)' }} />
+            <div className="absolute top-0 left-0 right-0 h-px" style={{ background: 'linear-gradient(to right, transparent, rgba(107, 33, 168, 0.5), transparent)' }} />
+            <div className="absolute bottom-0 left-0 right-0 h-px" style={{ background: 'linear-gradient(to right, transparent, rgba(107, 33, 168, 0.5), transparent)' }} />
 
             <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <motion.div
@@ -70,7 +70,7 @@ const HowItWorks = () => {
                             whileTap={{ scale: 0.95 }}
                         >
                             {activeTab === tab.id && (
-                                <motion.span layoutId="activeTab" className="absolute inset-0 rounded-xl" style={{ background: 'var(--accent)' }} transition={{ type: 'spring', bounce: 0.2, duration: 0.6 }} />
+                                <motion.span layoutId="activeTab" className="absolute inset-0 rounded-xl" style={{ background: 'linear-gradient(135deg, #a855f7, #ec4899)' }} transition={{ type: 'spring', bounce: 0.2, duration: 0.6 }} />
                             )}
                             <span className="relative z-10">{tab.label}</span>
                         </motion.button>
@@ -89,7 +89,7 @@ const HowItWorks = () => {
                     >
                         {/* Image */}
                         <div className="relative">
-                            <div className="absolute -inset-4 rounded-3xl blur-2xl" style={{ background: 'oklch(40.8% 0.153 2.432 / 0.08)' }} />
+                            <div className="absolute -inset-4 rounded-3xl blur-2xl" style={{ background: 'rgba(168, 85, 247, 0.08)' }} />
                             <div className="relative rounded-2xl overflow-hidden border border-white/10 group">
                                 <img src={content.image} alt={content.title} className="w-full h-[350px] sm:h-[400px] lg:h-[500px] object-cover transition-transform duration-700 group-hover:scale-105" />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
@@ -109,7 +109,7 @@ const HowItWorks = () => {
                                         animate={{ opacity: 1, x: 0 }}
                                         transition={{ delay: idx * 0.15 }}
                                     >
-                                        <div className="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0" style={{ background: 'var(--accent)' }}>
+                                        <div className="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0" style={{ background: 'linear-gradient(135deg, #a855f7, #ec4899)' }}>
                                             <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" /></svg>
                                         </div>
                                         <span className="text-gray-300 text-sm sm:text-base font-medium group-hover:text-white transition-colors">{point}</span>

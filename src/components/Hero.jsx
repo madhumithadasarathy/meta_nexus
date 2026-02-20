@@ -5,8 +5,8 @@ const Hero = () => {
         <section id="hero" className="relative min-h-screen flex items-center overflow-hidden bg-black">
             {/* BG effects */}
             <div className="absolute inset-0">
-                <div className="absolute top-1/4 left-1/6 w-[500px] h-[500px] rounded-full blur-[150px] morph-bg" style={{ background: 'oklch(40.8% 0.153 2.432 / 0.15)' }} />
-                <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] rounded-full blur-[120px] morph-bg" style={{ background: 'oklch(40.8% 0.1 2.432 / 0.1)', animationDelay: '4s' }} />
+                <div className="absolute top-1/4 left-1/6 w-[500px] h-[500px] rounded-full blur-[150px] morph-bg" style={{ background: 'rgba(168, 85, 247, 0.15)' }} />
+                <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] rounded-full blur-[120px] morph-bg" style={{ background: 'rgba(236, 72, 153, 0.1)', animationDelay: '4s' }} />
                 <div className="absolute inset-0 opacity-[0.03]" style={{
                     backgroundImage: 'linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)',
                     backgroundSize: '60px 60px'
@@ -27,7 +27,7 @@ const Hero = () => {
                             transition={{ delay: 0.2, duration: 0.5 }}
                             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-6"
                         >
-                            <span className="w-2 h-2 rounded-full animate-pulse" style={{ background: 'var(--accent-light)' }} />
+                            <span className="w-2 h-2 rounded-full animate-pulse bg-purple-400" />
                             <span className="text-xs sm:text-sm text-gray-300">Welcome to the Metaverse</span>
                         </motion.div>
 
@@ -118,18 +118,18 @@ const Hero = () => {
                         />
                         <motion.div
                             className="absolute w-[300px] h-[300px] sm:w-[380px] sm:h-[380px] lg:w-[500px] lg:h-[500px] rounded-full border bottom-[10%] left-1/2 -translate-x-1/2"
-                            style={{ borderColor: 'oklch(55% 0.153 2.432 / 0.15)' }}
+                            style={{ borderColor: 'rgba(236, 72, 153, 0.15)' }}
                             animate={{ rotate: -360 }}
                             transition={{ duration: 25, repeat: Infinity, ease: 'linear' }}
                         />
-                        <div className="absolute w-[320px] h-[320px] sm:w-[420px] sm:h-[420px] lg:w-[540px] lg:h-[540px] rounded-full blur-[100px] bottom-[5%] left-1/2 -translate-x-1/2" style={{ background: 'oklch(40.8% 0.153 2.432 / 0.15)' }} />
+                        <div className="absolute w-[320px] h-[320px] sm:w-[420px] sm:h-[420px] lg:w-[540px] lg:h-[540px] rounded-full blur-[100px] bottom-[5%] left-1/2 -translate-x-1/2" style={{ background: 'rgba(168, 85, 247, 0.15)' }} />
 
                         {/* VR Person Image */}
                         <motion.img
                             src="/images/meta_hero.png"
                             alt="VR Experience"
                             className="relative z-10 w-[400px] sm:w-[520px] lg:w-[700px] h-auto object-contain -mb-12 lg:-mb-20"
-                            style={{ filter: 'brightness(0.85) saturate(1.4) contrast(1.3) drop-shadow(0 0 50px oklch(40.8% 0.153 2.432 / 0.35))' }}
+                            style={{ filter: 'brightness(0.85) saturate(1.4) contrast(1.3) drop-shadow(0 0 50px rgba(168, 85, 247, 0.35))' }}
                             animate={{ y: [0, -12, 0] }}
                             transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
                         />
@@ -155,7 +155,7 @@ const Hero = () => {
                             animate={{ y: [0, -8, 0] }}
                             transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut', delay: 2 }}
                         >
-                            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center" style={{ background: 'var(--accent)' }}>
+                            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #a855f7, #ec4899)' }}>
                                 <svg className="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
                             </div>
                             <div>
