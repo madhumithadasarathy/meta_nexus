@@ -128,7 +128,7 @@ const Hero = () => {
                         <motion.img
                             src="/images/meta_hero.png"
                             alt="VR Experience"
-                            className="relative z-10 w-[400px] sm:w-[520px] lg:w-[700px] h-auto object-contain -mb-12 lg:-mb-20"
+                            className="relative z-10 w-[440px] sm:w-[560px] lg:w-[750px] h-auto object-contain mb-0"
                             style={{ filter: 'brightness(0.85) saturate(1.4) contrast(1.3) drop-shadow(0 0 50px rgba(168, 85, 247, 0.35))' }}
                             animate={{ y: [0, -12, 0] }}
                             transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
