@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 const CTA = () => (
     <section className="relative py-24 lg:py-32 overflow-hidden bg-black">
         <div className="absolute inset-0">
-            <img src="https://images.unsplash.com/photo-1492684223f-36515f164f73?w=1920&h=600&fit=crop" alt="Stage" className="w-full h-full object-cover" />
+            <img src="/images/stage.jpg" alt="Stage" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-black/85" />
             <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, rgba(99, 102, 241, 0.15), rgba(168, 85, 247, 0.12), rgba(236, 72, 153, 0.15))' }} />
         </div>
