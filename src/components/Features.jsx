@@ -74,23 +74,32 @@ const Features = () => {
                             key={i}
                             variants={cardVariants}
                             whileHover={{ y: -8, transition: { duration: 0.3 } }}
-                            className={`glass-card p-6 group cursor-pointer ${f.featured ? 'border-purple-500/30' : ''}`}
+                            className={`glass-card p-0 group cursor-pointer relative overflow-hidden ${f.featured ? 'border-purple-500/30' : ''}`}
                             style={f.featured ? { background: 'rgba(168, 85, 247, 0.06)' } : {}}
                         >
-                            <div
-                                className="w-14 h-14 rounded-xl flex items-center justify-center mb-5 text-white transition-transform duration-300 group-hover:scale-110 shadow-lg"
-                                style={{ background: 'linear-gradient(135deg, #6366f1, #a855f7, #ec4899)' }}
-                            >
-                                <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">{f.icon}</svg>
+                            {/* Card Background Image */}
+                            <img
+                                src="/images/cardbg.svg"
+                                alt=""
+                                className="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-60 transition-opacity duration-500"
+                            />
+                            {/* Card Content */}
+                            <div className="relative z-10 p-6">
+                                <div
+                                    className="w-14 h-14 rounded-xl flex items-center justify-center mb-5 text-white transition-transform duration-300 group-hover:scale-110 shadow-lg"
+                                    style={{ background: 'linear-gradient(135deg, #6366f1, #a855f7, #ec4899)' }}
+                                >
+                                    <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">{f.icon}</svg>
+                                </div>
+                                <h3 className="text-lg font-bold mb-3 text-white">{f.title}</h3>
+                                <p className="text-gray-400 text-sm leading-relaxed mb-4">{f.description}</p>
+                                <button className="flex items-center gap-2 text-sm font-medium transition-colors duration-300 group-hover:brightness-125 text-purple-400">
+                                    <span>Read More</span>
+                                    <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                    </svg>
+                                </button>
                             </div>
-                            <h3 className="text-lg font-bold mb-3 text-white">{f.title}</h3>
-                            <p className="text-gray-400 text-sm leading-relaxed mb-4">{f.description}</p>
-                            <button className="flex items-center gap-2 text-sm font-medium transition-colors duration-300 group-hover:brightness-125 text-purple-400">
-                                <span>Read More</span>
-                                <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                </svg>
-                            </button>
                         </motion.div>
                     ))}
                 </motion.div>
