@@ -47,13 +47,13 @@
   .btn-primary {
     @apply px-5 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-3.5 rounded-lg font-semibold text-white text-xs sm:text-sm md:text-base transition-all duration-300 ease-out cursor-pointer;
     background: var(--accent);
-    box-shadow: 0 4px 20px oklch(40.8% 0.153 2.432 / 0.3);
+    box-shadow: 0 4px 20px oklch(40.8% 0.153 2.432 / 0.3), 0 0 10px oklch(55% 0.153 2.432 / 0.15);
   }
 
   .btn-primary:hover {
     transform: translateY(-2px);
     background: var(--accent-light);
-    box-shadow: 0 8px 30px oklch(40.8% 0.153 2.432 / 0.5);
+    box-shadow: 0 8px 30px oklch(40.8% 0.153 2.432 / 0.5), 0 0 20px oklch(55% 0.2 2.432 / 0.25);
   }
 
   .btn-primary:active {
@@ -70,7 +70,7 @@
     background: oklch(40.8% 0.153 2.432 / 0.1);
     border-color: oklch(40.8% 0.153 2.432 / 0.8);
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px oklch(40.8% 0.153 2.432 / 0.2);
+    box-shadow: 0 8px 25px oklch(40.8% 0.153 2.432 / 0.2), 0 0 15px oklch(55% 0.153 2.432 / 0.15);
   }
 
   .btn-secondary:active {
@@ -86,8 +86,8 @@
   }
 
   .glass-card:hover {
-    border-color: oklch(40.8% 0.153 2.432 / 0.35);
-    box-shadow: 0 8px 40px oklch(40.8% 0.153 2.432 / 0.12);
+    border-color: oklch(55% 0.153 2.432 / 0.4);
+    box-shadow: 0 8px 40px oklch(40.8% 0.153 2.432 / 0.12), 0 0 20px oklch(55% 0.2 2.432 / 0.1);
     transform: translateY(-4px);
   }
 
@@ -114,6 +114,70 @@
       radial-gradient(at 20% 20%, oklch(40.8% 0.153 2.432 / 0.08) 0px, transparent 50%),
       radial-gradient(at 80% 30%, oklch(40.8% 0.1 2.432 / 0.06) 0px, transparent 50%),
       radial-gradient(at 50% 80%, oklch(40.8% 0.153 2.432 / 0.05) 0px, transparent 50%);
+  }
+}
+
+/* Shining gradient border */
+.shine-border {
+  position: relative;
+}
+
+.shine-border::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  background: conic-gradient(from var(--shine-angle, 0deg),
+      oklch(40.8% 0.153 2.432 / 0.05) 0deg,
+      oklch(55% 0.2 2.432 / 0.4) 60deg,
+      oklch(65% 0.15 2.432 / 0.6) 120deg,
+      oklch(55% 0.2 2.432 / 0.4) 180deg,
+      oklch(40.8% 0.153 2.432 / 0.05) 240deg,
+      oklch(55% 0.2 2.432 / 0.4) 300deg,
+      oklch(40.8% 0.153 2.432 / 0.05) 360deg);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  padding: 2px;
+  animation: shineRotate 4s linear infinite;
+}
+
+@keyframes shineRotate {
+  to {
+    --shine-angle: 360deg;
+  }
+}
+
+@property --shine-angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+/* Shining gradient background */
+.shine-bg {
+  background: linear-gradient(135deg,
+      oklch(40.8% 0.153 2.432 / 0.05) 0%,
+      oklch(55% 0.2 2.432 / 0.25) 25%,
+      oklch(65% 0.15 2.432 / 0.35) 50%,
+      oklch(55% 0.2 2.432 / 0.25) 75%,
+      oklch(40.8% 0.153 2.432 / 0.05) 100%);
+  background-size: 200% 200%;
+  animation: shineMove 3s ease-in-out infinite;
+}
+
+@keyframes shineMove {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
   }
 }
 

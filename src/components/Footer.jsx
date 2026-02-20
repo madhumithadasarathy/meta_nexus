@@ -65,7 +65,7 @@ const Footer = () => {
                         {['Twitter', 'Discord', 'GitHub'].map((name) => (
                             <a key={name} href="#" className="w-10 h-10 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white transition-all duration-300"
                                 style={{ '--hover-bg': 'oklch(40.8% 0.153 2.432 / 0.2)' }}
-                                onMouseEnter={(e) => { e.currentTarget.style.background = 'oklch(40.8% 0.153 2.432 / 0.15)'; e.currentTarget.style.borderColor = 'oklch(40.8% 0.153 2.432 / 0.3)' }}
+                                onMouseEnter={(e) => { e.currentTarget.style.background = 'linear-gradient(135deg, oklch(40.8% 0.153 2.432 / 0.15), oklch(55% 0.2 2.432 / 0.25))'; e.currentTarget.style.borderColor = 'oklch(55% 0.153 2.432 / 0.4)' }}
                                 onMouseLeave={(e) => { e.currentTarget.style.background = 'rgba(255,255,255,0.05)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.1)' }}
                             >
                                 <span className="text-xs font-bold">{name[0]}</span>

@@ -49,7 +49,7 @@ const Navbar = ({ scrollY }) => {
                                 whileTap={{ scale: 0.95 }}
                             >
                                 {activeLink === link && (
-                                    <motion.span layoutId="activeNav" className="absolute inset-0 rounded-lg" style={{ background: 'oklch(40.8% 0.153 2.432 / 0.2)' }} />
+                                    <motion.span layoutId="activeNav" className="absolute inset-0 rounded-lg shine-bg" />
                                 )}
                                 <span className="relative z-10">{link}</span>
                                 {link === 'Pages' && (

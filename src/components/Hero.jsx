@@ -111,8 +111,8 @@ const Hero = () => {
                     >
                         {/* Glow rings behind image */}
                         <motion.div
-                            className="absolute w-[350px] h-[350px] sm:w-[450px] sm:h-[450px] lg:w-[580px] lg:h-[580px] rounded-full border-2 bottom-[10%] left-1/2 -translate-x-1/2"
-                            style={{ borderColor: 'oklch(40.8% 0.153 2.432 / 0.2)' }}
+                            className="absolute w-[350px] h-[350px] sm:w-[450px] sm:h-[450px] lg:w-[580px] lg:h-[580px] rounded-full border-2 bottom-[10%] left-1/2 -translate-x-1/2 shine-border"
+                            style={{ borderColor: 'transparent' }}
                             animate={{ rotate: 360 }}
                             transition={{ duration: 30, repeat: Infinity, ease: 'linear' }}
                         />
