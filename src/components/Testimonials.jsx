@@ -4,17 +4,17 @@ import { motion } from 'framer-motion'
 const testimonials = [
     {
         name: 'Sarah Johnson', role: 'NFT Artist',
-        avatar: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=80&h=80&fit=crop&crop=face',
+        avatar: 'https://api.dicebear.com/9.x/bottts-neutral/svg?seed=Sarah&backgroundColor=6366f1',
         quote: 'The metaverse platform has completely changed how I create and sell my digital art. The community is incredible.',
     },
     {
         name: 'Alex Chen', role: 'Crypto Investor',
-        avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face',
+        avatar: 'https://api.dicebear.com/9.x/bottts-neutral/svg?seed=Alex&backgroundColor=a855f7',
         quote: "I've been investing in metaverse projects for years, and Nirix stands out with its innovation and user experience.",
     },
     {
         name: 'Emily Rodriguez', role: 'Game Developer',
-        avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=face',
+        avatar: 'https://api.dicebear.com/9.x/bottts-neutral/svg?seed=Emily&backgroundColor=ec4899',
         quote: 'Building virtual worlds on this platform is seamless. The SDK is powerful and the documentation is excellent.',
     },
 ]
