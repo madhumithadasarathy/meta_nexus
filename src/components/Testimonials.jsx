@@ -10,7 +10,7 @@ const testimonials = [
     {
         name: 'Alex Chen', role: 'Crypto Investor',
         avatar: 'https://api.dicebear.com/9.x/bottts-neutral/svg?seed=Alex&backgroundColor=a855f7',
-        quote: "I've been investing in metaverse projects for years, and Nirix stands out with its innovation and user experience.",
+        quote: "I've been investing in metaverse projects for years, and MetaX stands out with its innovation and user experience.",
     },
     {
         name: 'Emily Rodriguez', role: 'Game Developer',

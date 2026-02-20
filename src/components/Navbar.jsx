@@ -35,7 +35,7 @@ const Navbar = ({ scrollY }) => {
                                 <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
                             </svg>
                         </div>
-                        <span className="text-xl font-bold text-white tracking-tight">Nirix</span>
+                        <span className="text-xl font-bold text-white tracking-tight">MetaX</span>
                     </motion.div>
 
                     <div className="hidden md:flex items-center gap-1">

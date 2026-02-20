@@ -29,7 +29,7 @@ const Footer = () => {
                                     <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
                                 </svg>
                             </div>
-                            <span className="text-xl font-bold">Nirix</span>
+                            <span className="text-xl font-bold">MetaX</span>
                         </div>
                         <p className="text-gray-400 text-sm leading-relaxed mb-6 max-w-xs">
                             Building the future of virtual experiences. Join our metaverse and explore limitless possibilities.
@@ -59,7 +59,7 @@ const Footer = () => {
                 </motion.div>
 
                 <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-                    <p className="text-gray-500 text-sm">© 2026 Nirix. All rights reserved.</p>
+                    <p className="text-gray-500 text-sm">© 2026 MetaX. All rights reserved.</p>
                     <div className="flex gap-3">
                         {['Twitter', 'Discord', 'GitHub'].map((name) => (
                             <a key={name} href="#" className="w-10 h-10 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white transition-all duration-300"
