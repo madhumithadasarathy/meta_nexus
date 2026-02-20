@@ -22,7 +22,7 @@ const ParticleBackground = () => {
                         left: `${p.left}%`,
                         width: `${p.size}px`,
                         height: `${p.size}px`,
-                        background: i % 2 === 0 ? `rgba(168, 85, 247, ${p.opacity})` : `rgba(236, 72, 153, ${p.opacity})`,
+                        background: p.id % 2 === 0 ? `rgba(168, 85, 247, ${p.opacity})` : `rgba(236, 72, 153, ${p.opacity})`,
                         animationDelay: `${p.delay}s`,
                         animationDuration: `${p.duration}s`,
                     }}
